@@ -73,10 +73,8 @@ if ( ! class_exists( 'Cyboslider_Post_Type' ) ) {
 		 * @uses    the Meta Box plugin.
 		 * @see     http://metabox.io/
 		 */
-		public function add_meta_boxes() {
+		public function add_meta_boxes( $meta_boxes ) {
 			$prefix = CYBOSLIDER_PLUGIN_PREFIX;
-			
-			$meta_boxes = array();
 			
 			$meta_boxes[] = array(
 				'id'         => $prefix . 'slide_details',
