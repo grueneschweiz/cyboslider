@@ -36,11 +36,16 @@ if ( ! class_exists( 'Cyboslider_Post_Type' ) ) {
 				'menu_name'          => __( 'Slider', 'cyboslider' ),
 			);
 			$capabilities = array(
-				'edit_post'   => 'cyboslider_edit_slider',
-				'delete_post' => 'cyboslider_edit_slider',
-				'delete_posts'=> 'cyboslider_edit_slider',
-				'read_post'   => 'cyboslider_edit_slider',
+				'publish_posts'      => 'cyboslider_edit_slider',
+				'edit_posts'         => 'cyboslider_edit_slider',
+				'edit_others_posts'  => 'cyboslider_edit_slider',
+				'read_private_posts' => 'cyboslider_edit_slider',
+				'edit_post'          => 'cyboslider_edit_slider',
+				'delete_post'        => 'cyboslider_edit_slider',
+				//'delete_posts'=> 'cyboslider_edit_slider',
+				'read_post'          => 'cyboslider_edit_slider',
 			);
+			
 			$args = array(
 				'label'               => __( 'Slider', 'cyboslider' ),
 				'labels'              => $labels,
