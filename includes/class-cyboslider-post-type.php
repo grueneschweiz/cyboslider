@@ -35,6 +35,7 @@ if ( ! class_exists( 'Cyboslider_Post_Type' ) ) {
 				'parent_item_colon'  => __( 'Parent Slide:', 'cyboslider' ),
 				'menu_name'          => __( 'Slider', 'cyboslider' ),
 			);
+			/*
 			$capabilities = array(
 				'publish_posts'      => 'cyboslider_edit_slider',
 				'edit_posts'         => 'cyboslider_edit_slider',
@@ -45,6 +46,7 @@ if ( ! class_exists( 'Cyboslider_Post_Type' ) ) {
 				//'delete_posts'=> 'cyboslider_edit_slider',
 				'read_post'          => 'cyboslider_edit_slider',
 			);
+			*/
 			
 			$args = array(
 				'label'               => __( 'Slider', 'cyboslider' ),
@@ -55,8 +57,8 @@ if ( ! class_exists( 'Cyboslider_Post_Type' ) ) {
 				'show_ui'             => true,
 				'show_in_menu'        => true,
 				'can_export'          => true,
-				'capability_type'     => 'cyboslider_edit_slider',
-				'capabilities'        => $capabilities,
+				'capability_type'     => 'page', //'cyboslider_edit_slider',
+				//'capabilities'        => $capabilities,
 				'menu_icon'           => 'dashicons-images-alt2',
 				'rewrite'             => false,
 			);
