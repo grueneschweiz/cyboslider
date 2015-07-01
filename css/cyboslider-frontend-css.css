@@ -8,6 +8,9 @@ div#cyboslider-wrapper div#cyboslider-screen
 div#cyboslider-wrapper ul#cyboslider-images-list
 	{ padding: 0; list-style-type: none; float: left; width: 570px; height: 319px; position: relative; }
 
+div#cyboslider-wrapper ul#cyboslider-images-list li.cyboslider-image
+	{ width: 570px; height: 319px; }
+
 div#cyboslider-wrapper ul#cyboslider-captions-list
 	{ padding: 0; list-style-type: none; float: left; width: 380px; height: 319px; }
 
