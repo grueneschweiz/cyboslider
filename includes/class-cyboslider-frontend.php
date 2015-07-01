@@ -58,6 +58,7 @@ if ( ! class_exists( 'Cyboslider_Frontend' ) ) {
 					$image    = $this->get_the_image( $post_id );
 					$title    = get_the_title();
 					$link     = empty( $slide[ $prefix . 'link' ][0] ) ? '' : $slide[ $prefix . 'link' ][0];
+					$target   = $this->is_link_external( $link ) ? ' target="_blank"' : '';
 					
 					$output .= '<li id="cyboslider-image-' . $post_id . '" class="cyboslider-image cyboslider-image-' . $x . '">'.
 					               '<a href="' . $link .'" title="' . $title . '">'.
@@ -86,6 +87,7 @@ if ( ! class_exists( 'Cyboslider_Frontend' ) ) {
 					$title    = get_the_title();
 					$subtitle = empty( $slide[ $prefix . 'subtitle' ][0] ) ? __( '(No subtitle)', 'cyboslider' ) : $slide[ $prefix . 'subtitle' ][0];
 					$link     = empty( $slide[ $prefix . 'link' ][0] ) ? '' : $slide[ $prefix . 'link' ][0];
+					$target   = $this->is_link_external( $link ) ? ' target="_blank"' : '';
 					
 					$output .= '<li id="cyboslider-caption-' . $post_id . '" class="cyboslider-caption cyboslider-caption-' . $x . '" data-cyboslider-item="' .$x . '">'.
 					               '<a href="' . $link .'" title="' . $title . '">'.
@@ -145,6 +147,29 @@ if ( ! class_exists( 'Cyboslider_Frontend' ) ) {
 				$image_url = plugin_dir_url( CYBOSLIDER_PLUGIN_PATH . '/cyboslider.php' ) . 'img/default.jpg';
 				return '<img class="attachment-post-thumbnail cyboslider-default-image wp-post-image" width="'.$image_size['width'].'" height="'.$image_size['height'].'" alt="'.__( 'No image found', 'cyboslider' ).'" src="'.$image_url.'">';
 			}
+		}
+		
+		/**
+		 * checks if a link points to another domain
+		 * 
+		 * @return    bool    true for another domain,
+		 *                    false for the same domain
+		 */
+		private function is_link_external( $url ) {
+			$local_url_components = parse_url( home_url() );
+			$local_host = str_replace( 'www.', '', $local_url_components['host'] );
+			/**
+			 * @author    Ruslan Bes
+			 */
+			$components = parse_url( $url );
+			if ( empty( $components['host'] ) ) {
+				return false; // we will treat url like '/relative.php' as relative
+			}
+			if ( strcasecmp( $components['host'], $local_host ) === 0 ) {
+				return false; // url host looks exactly like the local host
+			}
+			// check if the url host is a subdomain
+			return strrpos( strtolower( $components['host'] ), '.'.$local_host ) !== strlen( $components['host']  ) - strlen( '.'.$local_host ); 
 		}
 	}
 }
