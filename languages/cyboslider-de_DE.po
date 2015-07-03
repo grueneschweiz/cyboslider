@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Cyboslider\n"
-"POT-Creation-Date: 2015-06-24 16:46+0100\n"
-"PO-Revision-Date: 2015-06-24 16:47+0100\n"
+"POT-Creation-Date: 2015-07-03 13:30+0100\n"
+"PO-Revision-Date: 2015-07-03 13:35+0100\n"
 "Last-Translator: Cyrill Bolliger <bolliger@gmx.ch>\n"
 "Language-Team: Cyrill Bolliger <bolliger@gmx.ch>\n"
 "Language: DE\n"
@@ -18,42 +18,42 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../cyboslider.php:142
+#: ../cyboslider.php:155
 msgid "You do not have sufficient permissions to access this page."
 msgstr "Sie haben nicht ausreichende Rechte um diese Seite anzuzeigen."
 
-#: ../cyboslider.php:446 ../vendor/class-tgm-plugin-activation.php:161
+#: ../cyboslider.php:516 ../vendor/class-tgm-plugin-activation.php:161
 msgid "Install Required Plugins"
 msgstr "Benötigte Plugins installieren"
 
-#: ../cyboslider.php:447 ../vendor/class-tgm-plugin-activation.php:162
+#: ../cyboslider.php:517 ../vendor/class-tgm-plugin-activation.php:162
 msgid "Install Plugins"
 msgstr "Plugins installieren"
 
-#: ../cyboslider.php:448 ../vendor/class-tgm-plugin-activation.php:163
+#: ../cyboslider.php:518 ../vendor/class-tgm-plugin-activation.php:163
 #, php-format
 msgid "Installing Plugin: %s"
 msgstr "Folgendes Plugin wird installiert: %s"
 
-#: ../cyboslider.php:449
+#: ../cyboslider.php:519
 msgid "Something went wrong with the plugin API."
 msgstr "Leider gab es einen Fehler mit der plugin API."
 
-#: ../cyboslider.php:450
+#: ../cyboslider.php:520
 #, php-format
 msgid "This theme requires the following plugin: %1$s."
 msgid_plural "This theme requires the following plugins: %1$s."
 msgstr[0] "Dieses Theme benötigt das folgende Plugin: %1$s."
 msgstr[1] "Dieses Theme benötigt die folgenden Plugins: %1$s."
 
-#: ../cyboslider.php:451
+#: ../cyboslider.php:521
 #, php-format
 msgid "This theme recommends the following plugin: %1$s."
 msgid_plural "This theme recommends the following plugins: %1$s."
 msgstr[0] "Dieses Theme empfiehlt das folgende Plugin: %1$s."
 msgstr[1] "Dieses Theme empfiehlt die folgenden Plugins: %1$s."
 
-#: ../cyboslider.php:452 ../vendor/class-tgm-plugin-activation.php:167
+#: ../cyboslider.php:522 ../vendor/class-tgm-plugin-activation.php:167
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to install the %s plugin. "
@@ -72,7 +72,7 @@ msgstr[1] ""
 "installieren. Für weitere Infos kontaktieren Sie bitte den Administrator "
 "dieser Seite."
 
-#: ../cyboslider.php:453 ../vendor/class-tgm-plugin-activation.php:168
+#: ../cyboslider.php:523 ../vendor/class-tgm-plugin-activation.php:168
 #, php-format
 msgid "The following required plugin is currently inactive: %1$s."
 msgid_plural "The following required plugins are currently inactive: %1$s."
@@ -81,14 +81,14 @@ msgstr[0] ""
 msgstr[1] ""
 "Die folgenden zwingend benötigten Plugins sind momentan deaktiviert: %1s."
 
-#: ../cyboslider.php:454 ../vendor/class-tgm-plugin-activation.php:169
+#: ../cyboslider.php:524 ../vendor/class-tgm-plugin-activation.php:169
 #, php-format
 msgid "The following recommended plugin is currently inactive: %1$s."
 msgid_plural "The following recommended plugins are currently inactive: %1$s."
 msgstr[0] "Das folgende empfohlene Plugin ist momentan deaktiviert: %1s."
 msgstr[1] "Die folgenden empfohlenen Plugins sind momentan deaktiviert: %1s."
 
-#: ../cyboslider.php:455 ../vendor/class-tgm-plugin-activation.php:170
+#: ../cyboslider.php:525 ../vendor/class-tgm-plugin-activation.php:170
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to activate the %s "
@@ -105,7 +105,7 @@ msgstr[1] ""
 "Leider haben Sie keine ausreichenden Rechte um die Plugins %s zu aktivieren. "
 "Für weitere Infos kontaktieren Sie bitte den Administrator dieser Seite."
 
-#: ../cyboslider.php:456
+#: ../cyboslider.php:526
 #, php-format
 msgid ""
 "The following plugin needs to be updated to its latest version to ensure "
@@ -120,7 +120,7 @@ msgstr[1] ""
 "Die folgenden Plugins müssen upgedated werden damit die maximale "
 "Kompatibilität gewährleistet ist: %1$s."
 
-#: ../cyboslider.php:457 ../vendor/class-tgm-plugin-activation.php:172
+#: ../cyboslider.php:527 ../vendor/class-tgm-plugin-activation.php:172
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to update the %s plugin. "
@@ -137,398 +137,123 @@ msgstr[1] ""
 "Leider haben Sie keine ausreichenden Rechte um die Plugins %s zu updaten. "
 "Für weitere Infos kontaktieren Sie bitte den Administrator dieser Seite."
 
-#: ../cyboslider.php:458 ../vendor/class-tgm-plugin-activation.php:173
+#: ../cyboslider.php:528 ../vendor/class-tgm-plugin-activation.php:173
 msgid "Begin installing plugin"
 msgid_plural "Begin installing plugins"
 msgstr[0] "Beginn der Plugin Installation"
 msgstr[1] "Beginn der Plugin Installation"
 
-#: ../cyboslider.php:459 ../vendor/class-tgm-plugin-activation.php:174
+#: ../cyboslider.php:529 ../vendor/class-tgm-plugin-activation.php:174
 msgid "Begin activating plugin"
 msgid_plural "Begin activating plugins"
 msgstr[0] "Beginn der Plugin Aktivierung"
 msgstr[1] "Beginn der Plugin Aktivierung"
 
-#: ../cyboslider.php:460 ../vendor/class-tgm-plugin-activation.php:175
+#: ../cyboslider.php:530 ../vendor/class-tgm-plugin-activation.php:175
 msgid "Return to Required Plugins Installer"
 msgstr "Zurück zum Plugin-Installer für zwingend benötigte Plugins"
 
-#: ../cyboslider.php:461 ../vendor/class-tgm-plugin-activation.php:177
+#: ../cyboslider.php:531 ../vendor/class-tgm-plugin-activation.php:177
 #: ../vendor/class-tgm-plugin-activation.php:1956
 msgid "Plugin activated successfully."
 msgstr "Plugin erfolgreich aktiviert."
 
-#: ../cyboslider.php:462
+#: ../cyboslider.php:532
 #, php-format
 msgid "All plugins installed and activated successfully. %s"
 msgstr "Alle plugins wurden erfolgreich installiert und aktiviert. %s"
 
-#: ../frontend/class-cyboslider-frontend.php:18
+#: ../includes/class-cyboslider-frontend.php:18
 msgid "Unknown shortcode or invalid arguments."
 msgstr "Unbekannter Shortcode oder fehlerhafte Argumente."
 
-#: ../frontend/class-cyboslider-frontend.php:182
-#, php-format
-msgid "No people found in the group \"%s\"."
-msgstr "Keine Personen in der Gruppe \"%s\" gefunden."
+#: ../includes/class-cyboslider-frontend.php:63
+#: ../includes/class-cyboslider-frontend.php:96
+#: ../includes/class-cyboslider-post-type.php:92
+msgid "(No subtitle)"
+msgstr "(Kein Untertitel)"
 
-#: ../frontend/class-cyboslider-frontend.php:207
-msgid "Blank avatar"
-msgstr "Symbolbild Person"
-
-#: ../frontend/cyboslider-person.php:66
-msgid "Mail:"
-msgstr "Mail:"
-
-#: ../frontend/cyboslider-person.php:72
-msgid "Phone:"
-msgstr "Telefon:"
-
-#: ../frontend/cyboslider-person.php:78
-msgid "Mobile:"
-msgstr "Handy:"
-
-#: ../frontend/cyboslider-person.php:85 ../frontend/cyboslider-person.php:86
-#: ../includes/class-cyboslider-post-type.php:244
-msgid "Website"
-msgstr "Website"
-
-#: ../frontend/cyboslider-person.php:91 ../frontend/cyboslider-person.php:92
-#: ../includes/class-cyboslider-post-type.php:251
-msgid "Facebook"
-msgstr "Facebook"
-
-#: ../frontend/cyboslider-person.php:97 ../frontend/cyboslider-person.php:98
-#: ../includes/class-cyboslider-post-type.php:258
-msgid "Twitter"
-msgstr "Twitter"
-
-#: ../frontend/cyboslider-person.php:103 ../frontend/cyboslider-person.php:104
-#: ../includes/class-cyboslider-post-type.php:265
-msgid "LinkedIn"
-msgstr "LinkedIn"
-
-#: ../frontend/cyboslider-person.php:109 ../frontend/cyboslider-person.php:110
-#: ../includes/class-cyboslider-post-type.php:272
-msgid "Google Plus"
-msgstr "Google Plus"
-
-#: ../frontend/cyboslider-person.php:115 ../frontend/cyboslider-person.php:116
-#: ../includes/class-cyboslider-post-type.php:279
-msgid "Youtube"
-msgstr "Youtube"
-
-#: ../frontend/cyboslider-person.php:121 ../frontend/cyboslider-person.php:122
-#: ../includes/class-cyboslider-post-type.php:286
-msgid "Vimeo"
-msgstr "Vimeo"
-
-#: ../frontend/cyboslider-person.php:127 ../frontend/cyboslider-person.php:128
-#: ../frontend/cyboslider-person.php:165
-msgid "Smartvote"
-msgstr "Smartvote"
-
-#: ../frontend/cyboslider-person.php:137
-msgid "Election info"
-msgstr "Wahlinfo"
-
-#: ../frontend/cyboslider-person.php:141
-msgid "Ticket name:"
-msgstr "Listenname:"
-
-#: ../frontend/cyboslider-person.php:147
-msgid "Ticket number:"
-msgstr "Listennummer:"
-
-#: ../frontend/cyboslider-person.php:153
-msgid "Candidate number:"
-msgstr "Kandidierendennummer:"
-
-#: ../frontend/cyboslider-person.php:159
-msgid "District:"
-msgstr "Wahlkreis:"
-
-#: ../frontend/cyboslider-person.php:174
-#: ../includes/class-cyboslider-post-type.php:143
-msgid "Mandates"
-msgstr "Mandate"
-
-#: ../frontend/cyboslider-person.php:186
-#: ../includes/class-cyboslider-post-type.php:151
-msgid "Memberships"
-msgstr "Mitgliedschaften"
-
-#: ../includes/class-cyboslider-mce-plugin.php:57
-#: ../includes/class-cyboslider-mce-plugin.php:58
-msgid "Add People – asdf"
-msgstr ""
-
-#: ../includes/class-cyboslider-mce-plugin.php:59
-msgid "Hello World!!!!"
-msgstr ""
+#: ../includes/class-cyboslider-frontend.php:175
+msgid "No image found"
+msgstr "Kein Bild gefunden."
 
 #: ../includes/class-cyboslider-post-type.php:25
-#: ../includes/class-cyboslider-post-type.php:36
-#: ../includes/class-cyboslider-post-type.php:39
-msgid "People"
-msgstr "Personen"
+msgid "Slides"
+msgstr "Slides"
 
 #: ../includes/class-cyboslider-post-type.php:26
-msgid "Person"
-msgstr "Person"
+#: ../includes/class-cyboslider-post-type.php:103
+#: ../includes/class-cyboslider-post-type.php:129
+msgid "Slide"
+msgstr "Slide"
 
 #: ../includes/class-cyboslider-post-type.php:27
-msgid "Add New Person"
-msgstr "Neue Person hinzufügen"
+msgid "Add New Slide"
+msgstr "Neue Slide hinzufügen"
 
 #: ../includes/class-cyboslider-post-type.php:28
 msgid "Add New"
 msgstr "Neu hinzufügen"
 
 #: ../includes/class-cyboslider-post-type.php:29
-msgid "Edit Person"
-msgstr "Person änden"
+msgid "Edit Slide"
+msgstr "Slide bearbeiten"
 
 #: ../includes/class-cyboslider-post-type.php:30
-msgid "New Person"
-msgstr "Neue Person"
+msgid "New Slide"
+msgstr "Neue Slide"
 
 #: ../includes/class-cyboslider-post-type.php:31
-msgid "View Person"
-msgstr "Person anschauen"
+msgid "View Slide"
+msgstr "Slide anschauen"
 
 #: ../includes/class-cyboslider-post-type.php:32
-msgid "Search Person"
-msgstr "Person suchen"
+msgid "Search Slide"
+msgstr "Slide suchen"
 
 #: ../includes/class-cyboslider-post-type.php:33
-msgid "Not found any People"
-msgstr "Keine Personen gefunden"
+msgid "Not found any Slides"
+msgstr "Keine Slides gefunden"
 
 #: ../includes/class-cyboslider-post-type.php:34
-msgid "No Person found in Trash"
-msgstr "Keine Person im Papierkorb gefunden"
+msgid "No Slide found in Trash"
+msgstr "Keine Slides im Papierkorb gefunden"
 
 #: ../includes/class-cyboslider-post-type.php:35
-msgid "Parent Person:"
-msgstr "Elternperson:"
+msgid "Parent Slide:"
+msgstr "Elternslide:"
 
-#: ../includes/class-cyboslider-post-type.php:60
-#: ../includes/class-cyboslider-post-type.php:75
-msgid "Groups"
-msgstr "Gruppen"
+#: ../includes/class-cyboslider-post-type.php:36
+#: ../includes/class-cyboslider-post-type.php:52
+msgid "Slider"
+msgstr "Slider"
 
-#: ../includes/class-cyboslider-post-type.php:61
-msgid "Group"
-msgstr "Gruppe"
+#: ../includes/class-cyboslider-post-type.php:81
+#, fuzzy
+msgid "Slide details"
+msgstr "Details verbergen"
 
-#: ../includes/class-cyboslider-post-type.php:62
-msgid "Search Groups"
-msgstr "Gruppen suchen"
+#: ../includes/class-cyboslider-post-type.php:88
+msgid "Subtitle"
+msgstr "Untertitel"
 
-#: ../includes/class-cyboslider-post-type.php:63
-msgid "Popular Groups"
-msgstr "Beliebte Gruppen"
+#: ../includes/class-cyboslider-post-type.php:89
+msgid "The text below the title."
+msgstr "Text unter dem Titel."
 
-#: ../includes/class-cyboslider-post-type.php:64
-msgid "All Groups"
-msgstr "Alle Gruppen"
+#: ../includes/class-cyboslider-post-type.php:96
+msgid "Link"
+msgstr "Link"
 
-#: ../includes/class-cyboslider-post-type.php:67
-msgid "Edit Group"
-msgstr "Gruppe ändern"
-
-#: ../includes/class-cyboslider-post-type.php:68
-msgid "Update Group"
-msgstr "Gruppe aktualisieren"
-
-#: ../includes/class-cyboslider-post-type.php:69
-msgid "Add New Group"
-msgstr "Neue Gruppe hinzufügen"
-
-#: ../includes/class-cyboslider-post-type.php:70
-msgid "New Group Name"
-msgstr "Neuer Gruppenname"
-
-#: ../includes/class-cyboslider-post-type.php:71
-msgid "Separate Groups with commas"
-msgstr "Trenne Gruppen mit Kommas"
-
-#: ../includes/class-cyboslider-post-type.php:72
-msgid "Add or remove Groups"
-msgstr "Gruppe hinzufügen oder Entfernen"
-
-#: ../includes/class-cyboslider-post-type.php:73
-msgid "Choose from the most used Groups"
-msgstr "Wähle von den belibtesten Gruppen"
-
-#: ../includes/class-cyboslider-post-type.php:74
-msgid "No Groups found."
-msgstr "Keine Gruppen gefunden."
+#: ../includes/class-cyboslider-post-type.php:97
+msgid "Link to the corresponding article (internal or external)."
+msgstr "Link zum dazugehörigen Artikel (intern und extern möglich)."
 
 #: ../includes/class-cyboslider-post-type.php:104
-msgid "Personal information"
-msgstr "Infos zur Person"
+msgid "Please upload slide"
+msgstr "Bitte Bild hochladen."
 
-#: ../includes/class-cyboslider-post-type.php:111
-msgid "Year of birth"
-msgstr "Jahrgang"
-
-#: ../includes/class-cyboslider-post-type.php:112
-msgid "Year of birth. Ex: 1970"
-msgstr "Jahrgang. Z.B. 1970"
-
-#: ../includes/class-cyboslider-post-type.php:121
-msgctxt "Place of residence"
-msgid "City"
-msgstr "Gemeinde"
-
-#: ../includes/class-cyboslider-post-type.php:122
-msgctxt "Place of residence"
-msgid "Hometown"
-msgstr "Gemeinde"
-
-#: ../includes/class-cyboslider-post-type.php:128
-msgid "Role"
-msgstr "Funktion"
-
-#: ../includes/class-cyboslider-post-type.php:129
-msgid "List of the current roles of this person. Use a comma to separate them."
-msgstr "Kommagetrennte Liste der aktuellen Funktionen dieser Person. "
-
-#: ../includes/class-cyboslider-post-type.php:135
-msgid "Brief CV"
-msgstr "Kurzer Lebenslauf"
-
-#: ../includes/class-cyboslider-post-type.php:136
-msgid "Very short curivulum vitae (2-3 lines)."
-msgstr "Sehr kurzer Lebenslauf (2-3 Zeilen)"
-
-#: ../includes/class-cyboslider-post-type.php:144
-msgid ""
-"List of organizations where this person has mandates. Use one line per "
-"organization."
-msgstr "Liste der Mandate dieser Person. Ein Mandat pro Zeile."
-
-#: ../includes/class-cyboslider-post-type.php:152
-msgid ""
-"List of organizations where this person is a member of. Use one line per "
-"organization."
-msgstr "Liste der Mitgliedschaften dieser Person. Eine Organisation pro Zeile."
-
-#: ../includes/class-cyboslider-post-type.php:163
-msgid "Election information"
-msgstr "Informationen zu den Wahlen"
-
-#: ../includes/class-cyboslider-post-type.php:170
-msgid "Ticket name"
-msgstr "Listenname"
-
-#: ../includes/class-cyboslider-post-type.php:171
-msgid "Name of the electoral list."
-msgstr "Name der Wahlliste."
-
-#: ../includes/class-cyboslider-post-type.php:177
-msgid "Ticket number"
-msgstr "Listennummer"
-
-#: ../includes/class-cyboslider-post-type.php:178
-msgid "Number of the electoral list."
-msgstr "Nummer der Wahlliste"
-
-#: ../includes/class-cyboslider-post-type.php:184
-msgid "Candidate number"
-msgstr "Kandidatennummer"
-
-#: ../includes/class-cyboslider-post-type.php:185
-msgid "Number of the candidate on the ticket"
-msgstr "Nummer des Kandidaten auf der Liste"
-
-#: ../includes/class-cyboslider-post-type.php:191
-msgid "District"
-msgstr "Wahlkreis"
-
-#: ../includes/class-cyboslider-post-type.php:192
-msgid "Electoral district"
-msgstr "Name des Wahlkreises"
-
-#: ../includes/class-cyboslider-post-type.php:198
-msgid "Smartvote Link"
-msgstr "Link zu Smartvote"
-
-#: ../includes/class-cyboslider-post-type.php:199
-msgid "Link to the smartvote profile"
-msgstr "Link auf das Smartvote-Profil des Kandidierenden"
-
-#: ../includes/class-cyboslider-post-type.php:205
-msgid "Smartspider"
-msgstr "Smartspider"
-
-#: ../includes/class-cyboslider-post-type.php:206
-msgid "Please upload smartspider"
-msgstr "Bitte den Smartspider hochladen."
-
-#: ../includes/class-cyboslider-post-type.php:216
-msgid "Contact information"
-msgstr "Kontaktinformationen"
-
-#: ../includes/class-cyboslider-post-type.php:223
-msgid "Email"
-msgstr "Mail"
-
-#: ../includes/class-cyboslider-post-type.php:224
-msgid "Email address"
-msgstr "E-Mailadresse"
-
-#: ../includes/class-cyboslider-post-type.php:230
-msgid "Phone"
-msgstr "Telefon"
-
-#: ../includes/class-cyboslider-post-type.php:231
-msgid "Phone number"
-msgstr "Telefonnummer (Festanschluss)"
-
-#: ../includes/class-cyboslider-post-type.php:237
-msgid "Mobile"
-msgstr "Handy"
-
-#: ../includes/class-cyboslider-post-type.php:238
-msgid "Mobilephone number"
-msgstr "Handynummer"
-
-#: ../includes/class-cyboslider-post-type.php:245
-msgid "Website URL"
-msgstr "Link zur Website des Kandidierenden"
-
-#: ../includes/class-cyboslider-post-type.php:252
-msgid "Facebook profile or page link."
-msgstr "Link zum Facebook-Profil oder der Facebook-Fanseite"
-
-#: ../includes/class-cyboslider-post-type.php:259
-msgid "Twitter profile link."
-msgstr "Link zum Twitter-Profil"
-
-#: ../includes/class-cyboslider-post-type.php:266
-msgid "LinkedIn profile link."
-msgstr "Link zum LinkedIn-Profil"
-
-#: ../includes/class-cyboslider-post-type.php:273
-msgid "Google Plus profile link."
-msgstr "Link zum Google Plus-Profil"
-
-#: ../includes/class-cyboslider-post-type.php:280
-msgid "Youtube profile link."
-msgstr "Link zum Youtubekanal"
-
-#: ../includes/class-cyboslider-post-type.php:287
-msgid "Vimeo profile link."
-msgstr "Link zum Vimeokanal"
-
-#: ../includes/class-cyboslider-post-type.php:312
-msgid "Portrait"
-msgstr "Portraitfoto"
-
-#: ../includes/class-cyboslider-post-type.php:313
+#: ../includes/class-cyboslider-post-type.php:130
 msgid "ID"
 msgstr "ID"
 
@@ -618,7 +343,7 @@ msgstr "Nicht installiert"
 
 #: ../vendor/class-tgm-plugin-activation.php:1183
 msgid "Installed But Not Activated"
-msgstr "Installiert aber nicht Aktiviert"
+msgstr "Installiert aber nicht aktiviert"
 
 #: ../vendor/class-tgm-plugin-activation.php:1288
 #: ../vendor/class-tgm-plugin-activation.php:1409
@@ -751,6 +476,239 @@ msgstr "Alle Installationen wurden erfolgreich abgeschlossen."
 #, php-format
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr "Plugin %1$s (%2$d/%3$d) wird installiert"
+
+#~ msgid "No people found in the group \"%s\"."
+#~ msgstr "Keine Personen in der Gruppe \"%s\" gefunden."
+
+#~ msgid "Blank avatar"
+#~ msgstr "Symbolbild Person"
+
+#~ msgid "Mail:"
+#~ msgstr "Mail:"
+
+#~ msgid "Phone:"
+#~ msgstr "Telefon:"
+
+#~ msgid "Mobile:"
+#~ msgstr "Handy:"
+
+#~ msgid "Website"
+#~ msgstr "Website"
+
+#~ msgid "Facebook"
+#~ msgstr "Facebook"
+
+#~ msgid "Twitter"
+#~ msgstr "Twitter"
+
+#~ msgid "Google Plus"
+#~ msgstr "Google Plus"
+
+#~ msgid "Youtube"
+#~ msgstr "Youtube"
+
+#~ msgid "Vimeo"
+#~ msgstr "Vimeo"
+
+#~ msgid "Smartvote"
+#~ msgstr "Smartvote"
+
+#~ msgid "Election info"
+#~ msgstr "Wahlinfo"
+
+#~ msgid "Ticket name:"
+#~ msgstr "Listenname:"
+
+#~ msgid "Ticket number:"
+#~ msgstr "Listennummer:"
+
+#~ msgid "Candidate number:"
+#~ msgstr "Kandidierendennummer:"
+
+#~ msgid "District:"
+#~ msgstr "Wahlkreis:"
+
+#~ msgid "Mandates"
+#~ msgstr "Mandate"
+
+#~ msgid "Memberships"
+#~ msgstr "Mitgliedschaften"
+
+#~ msgid "People"
+#~ msgstr "Personen"
+
+#~ msgid "Person"
+#~ msgstr "Person"
+
+#~ msgid "Add New Person"
+#~ msgstr "Neue Person hinzufügen"
+
+#~ msgid "Edit Person"
+#~ msgstr "Person änden"
+
+#~ msgid "New Person"
+#~ msgstr "Neue Person"
+
+#~ msgid "View Person"
+#~ msgstr "Person anschauen"
+
+#~ msgid "Groups"
+#~ msgstr "Gruppen"
+
+#~ msgid "Group"
+#~ msgstr "Gruppe"
+
+#~ msgid "Search Groups"
+#~ msgstr "Gruppen suchen"
+
+#~ msgid "Popular Groups"
+#~ msgstr "Beliebte Gruppen"
+
+#~ msgid "All Groups"
+#~ msgstr "Alle Gruppen"
+
+#~ msgid "Edit Group"
+#~ msgstr "Gruppe ändern"
+
+#~ msgid "Update Group"
+#~ msgstr "Gruppe aktualisieren"
+
+#~ msgid "Add New Group"
+#~ msgstr "Neue Gruppe hinzufügen"
+
+#~ msgid "New Group Name"
+#~ msgstr "Neuer Gruppenname"
+
+#~ msgid "Separate Groups with commas"
+#~ msgstr "Trenne Gruppen mit Kommas"
+
+#~ msgid "Add or remove Groups"
+#~ msgstr "Gruppe hinzufügen oder Entfernen"
+
+#~ msgid "Choose from the most used Groups"
+#~ msgstr "Wähle von den belibtesten Gruppen"
+
+#~ msgid "Personal information"
+#~ msgstr "Infos zur Person"
+
+#~ msgid "Year of birth"
+#~ msgstr "Jahrgang"
+
+#~ msgid "Year of birth. Ex: 1970"
+#~ msgstr "Jahrgang. Z.B. 1970"
+
+#~ msgctxt "Place of residence"
+#~ msgid "City"
+#~ msgstr "Gemeinde"
+
+#~ msgctxt "Place of residence"
+#~ msgid "Hometown"
+#~ msgstr "Gemeinde"
+
+#~ msgid "Role"
+#~ msgstr "Funktion"
+
+#~ msgid ""
+#~ "List of the current roles of this person. Use a comma to separate them."
+#~ msgstr "Kommagetrennte Liste der aktuellen Funktionen dieser Person. "
+
+#~ msgid "Brief CV"
+#~ msgstr "Kurzer Lebenslauf"
+
+#~ msgid "Very short curivulum vitae (2-3 lines)."
+#~ msgstr "Sehr kurzer Lebenslauf (2-3 Zeilen)"
+
+#~ msgid ""
+#~ "List of organizations where this person has mandates. Use one line per "
+#~ "organization."
+#~ msgstr "Liste der Mandate dieser Person. Ein Mandat pro Zeile."
+
+#~ msgid ""
+#~ "List of organizations where this person is a member of. Use one line per "
+#~ "organization."
+#~ msgstr ""
+#~ "Liste der Mitgliedschaften dieser Person. Eine Organisation pro Zeile."
+
+#~ msgid "Election information"
+#~ msgstr "Informationen zu den Wahlen"
+
+#~ msgid "Ticket name"
+#~ msgstr "Listenname"
+
+#~ msgid "Name of the electoral list."
+#~ msgstr "Name der Wahlliste."
+
+#~ msgid "Ticket number"
+#~ msgstr "Listennummer"
+
+#~ msgid "Number of the electoral list."
+#~ msgstr "Nummer der Wahlliste"
+
+#~ msgid "Candidate number"
+#~ msgstr "Kandidatennummer"
+
+#~ msgid "Number of the candidate on the ticket"
+#~ msgstr "Nummer des Kandidaten auf der Liste"
+
+#~ msgid "District"
+#~ msgstr "Wahlkreis"
+
+#~ msgid "Electoral district"
+#~ msgstr "Name des Wahlkreises"
+
+#~ msgid "Smartvote Link"
+#~ msgstr "Link zu Smartvote"
+
+#~ msgid "Link to the smartvote profile"
+#~ msgstr "Link auf das Smartvote-Profil des Kandidierenden"
+
+#~ msgid "Smartspider"
+#~ msgstr "Smartspider"
+
+#~ msgid "Contact information"
+#~ msgstr "Kontaktinformationen"
+
+#~ msgid "Email"
+#~ msgstr "Mail"
+
+#~ msgid "Email address"
+#~ msgstr "E-Mailadresse"
+
+#~ msgid "Phone"
+#~ msgstr "Telefon"
+
+#~ msgid "Phone number"
+#~ msgstr "Telefonnummer (Festanschluss)"
+
+#~ msgid "Mobile"
+#~ msgstr "Handy"
+
+#~ msgid "Mobilephone number"
+#~ msgstr "Handynummer"
+
+#~ msgid "Website URL"
+#~ msgstr "Link zur Website des Kandidierenden"
+
+#~ msgid "Facebook profile or page link."
+#~ msgstr "Link zum Facebook-Profil oder der Facebook-Fanseite"
+
+#~ msgid "Twitter profile link."
+#~ msgstr "Link zum Twitter-Profil"
+
+#~ msgid "LinkedIn profile link."
+#~ msgstr "Link zum LinkedIn-Profil"
+
+#~ msgid "Google Plus profile link."
+#~ msgstr "Link zum Google Plus-Profil"
+
+#~ msgid "Youtube profile link."
+#~ msgstr "Link zum Youtubekanal"
+
+#~ msgid "Vimeo profile link."
+#~ msgstr "Link zum Vimeokanal"
+
+#~ msgid "Portrait"
+#~ msgstr "Portraitfoto"
 
 #~ msgid "Cyboslider_user"
 #~ msgstr "Cyboslider user"
