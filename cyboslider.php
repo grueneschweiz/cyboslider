@@ -51,6 +51,17 @@ define( 'CYBOSLIDER_VERSION', '0.9.1' );
 define( 'CYBOSLIDER_PLUGIN_PREFIX', 'cyboslider_' );
 
 /**
+ * other constants
+ */
+define( 'CYBOSLIDER_WIDTH', 970 );
+define( 'CYBOSLIDER_HEIGHT', 339 );
+define( 'CYBOSLIDER_IMAGE_WIDTH', 570 );
+define( 'CYBOSLIDER_IMAGE_HEIGHT', 319 );
+define( 'CYBOSLIDER_CAPTIONS_WIDTH', 380 );
+define( 'CYBOSLIDER_CAPTIONS_HEIGHT', 79 );
+define( 'CYBOSLIDER_INTERMEDIATE_WIDTH', 669 );
+ 
+/**
  * load settings class
  */
 require_once( CYBOSLIDER_PLUGIN_PATH . '/includes/class-cyboslider-settings.php' );
@@ -75,6 +86,7 @@ if ( ! class_exists( 'Cyboslider_Main' ) ) {
 			add_action( 'admin_menu', array( &$this, 'add_menu' ) );
 			add_action( 'plugins_loaded', array( &$this, 'i18n' ) );
 			add_action( 'wp_enqueue_scripts', array( &$this, 'load_resources' ) );
+			add_action( 'wp_print_scripts', array( &$this, 'load_inline_resources' ) );
 			add_action( 'admin_enqueue_scripts', array( &$this, 'load_resources' ) );
 			add_action( 'tgmpa_register', array( &$this, 'register_required_plugins' ) );
 			add_action( 'after_setup_theme', array( &$this, 'register_image_size' ) );
@@ -356,6 +368,22 @@ if ( ! class_exists( 'Cyboslider_Main' ) ) {
 					}
 				}
 			}
+		}
+		
+		/**
+		 * load inline ressources
+		 */
+		public function load_inline_resources() {
+			$constants = array(
+				'width'            => CYBOSLIDER_WIDTH,
+				'height'           => CYBOSLIDER_HEIGHT,
+				'imageWidth'       => CYBOSLIDER_IMAGE_WIDTH,
+				'imageHeight'      => CYBOSLIDER_IMAGE_HEIGHT,
+				'captionsWidth'    => CYBOSLIDER_CAPTIONS_WIDTH,
+				'captionsHeight'   => CYBOSLIDER_CAPTIONS_HEIGHT,
+				'intermediateWidth'=> CYBOSLIDER_INTERMEDIATE_WIDTH,
+			);
+			wp_localize_script( 'cyboslider-frontend-js', 'cybosliderConst', $constants );
 		}
 		
 		/**

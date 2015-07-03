@@ -1,48 +1,90 @@
 div#cyboslider-wrapper
-	{ background-color: #ffffff; width: 970px; height: 340px; overflow: hidden; border-radius: 5px; padding: 10px;
-	  position: relative; }
+	{ background-color: #ffffff; overflow: hidden; border-radius: 5px; padding: 10px; position: relative; }
 
 div#cyboslider-wrapper div#cyboslider-screen
-	{ width: 570px; height: 319px; overflow: hidden; float: left; }
+	{ overflow: hidden; float: left; }
 
 div#cyboslider-wrapper ul#cyboslider-images-list
-	{ padding: 0; list-style-type: none; float: left; width: 570px; height: 319px; position: relative; }
+	{ padding: 0; list-style-type: none; float: left; width: 100%; position: relative; }
 
 div#cyboslider-wrapper ul#cyboslider-images-list li.cyboslider-image
-	{ width: 570px; height: 319px; }
+	{ width: 100%; position: relative; }
 
 div#cyboslider-wrapper ul#cyboslider-captions-list
-	{ padding: 0; list-style-type: none; float: left; width: 380px; height: 319px; }
+	{ padding: 0; list-style-type: none; float: left; }
 
-div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption.active::before
+div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption.active::before,
+div#cyboslider-wrapper ul#cyboslider-mobile-buttons-list li.cyboslider-mobile-button.active::before
 	{ border-color: transparent #e10078; border-style: solid; border-width: 7px 7px 7px 0; content: "";
 	  display: block; height: 0; left: -7px; position: absolute; top: 34px; width: 0; }
 
-div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption
-	{ height: 79px; background-color: #f3f3f3; position: relative; }
+div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption,
+div#cyboslider-wrapper ul#cyboslider-mobile-buttons-list li.cyboslider-mobile-button,
+div#cyboslider-wrapper ul#cyboslider-mobile-buttons-list li.cyboslider-mobile-button-dummy
+	{ background-color: #f3f3f3; position: relative; }
 
-div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption:not(:first-of-type)
+div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption:not(:first-of-type),
+div#cyboslider-wrapper ul#cyboslider-mobile-buttons-list li.cyboslider-mobile-button:not(:first-of-type),
+div#cyboslider-wrapper ul#cyboslider-mobile-buttons-list li.cyboslider-mobile-button-dummy
 	{ margin-top: 1px; }
 
 div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption:hover,
-div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption.active
+div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption.active,
+div#cyboslider-wrapper ul#cyboslider-mobile-buttons-list li.cyboslider-mobile-button:hover,
+div#cyboslider-wrapper ul#cyboslider-mobile-buttons-list li.cyboslider-mobile-button.active
 	{ background-color: #e10078; cursor: pointer; }
 
 div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption a
 	{ display: block; width: 100%; height: 100%; padding: 15px; }
 
-div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption a,
-div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption a:visited
+div#cyboslider-wrapper a,
+div#cyboslider-wrapper a:visited
 	{ color: #404040; text-decoration: none; }
 
 div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption.active a,
 div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption.active a:visited,
 div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption:hover a,
-div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption:hover a:visited
+div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption:hover a:visited,
+div#cyboslider-wrapper ul#cyboslider-mobile-buttons-list li.cyboslider-mobile-button:hover,
+div#cyboslider-wrapper ul#cyboslider-mobile-buttons-list li.cyboslider-mobile-button.active
 	{ color: #ffffff; }
 	
-div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption span
-	{ display: block; }
+div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption span,
+div#cyboslider-wrapper ul#cyboslider-images-list li.cyboslider-image div.cyboslider-mobile-caption span
+	{ display: block; font-size: 15px; }
 
-div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption span.cyboslider-caption-title
+div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption span.cyboslider-caption-title,
+div#cyboslider-wrapper ul#cyboslider-images-list li.cyboslider-image div.cyboslider-mobile-caption span.cyboslider-caption-title
 	{ font-weight: bold; }
+
+div#cyboslider-wrapper ul#cyboslider-mobile-buttons-list
+	{ display: none; padding: 0; list-style-type: none; float: left; }
+
+div#cyboslider-wrapper ul#cyboslider-mobile-buttons-list li.cyboslider-mobile-button
+	{ text-align: center; padding-top: 27px; font-weight: bold; }
+
+div#cyboslider-wrapper div.cyboslider-mobile-caption
+	{ display:none; background-color: #f3f3f3; width: 100%; position: absolute; bottom: 0; 
+	  padding: 15px; }
+
+@media screen and ( max-width: 969px ) {
+	
+	div#cyboslider-wrapper ul#cyboslider-captions-list
+		{ display: none; }
+	
+	div#cyboslider-wrapper ul#cyboslider-mobile-buttons-list
+		{ display: block; }
+	
+	div#cyboslider-wrapper div.cyboslider-mobile-caption
+		{ display: block; }
+}
+
+@media screen and ( max-width: 669px ) {
+	div#cyboslider-wrapper ul#cyboslider-mobile-buttons-list
+		{ display: block; }
+}
+
+@media screen and ( max-width: 600px ) {
+	div#cyboslider-wrapper ul#cyboslider-mobile-buttons-list
+		{ display: none; }
+}

@@ -42,11 +42,11 @@ if ( ! class_exists( 'Cyboslider_Frontend' ) ) {
 			// if have posts
 			if ( $query->have_posts() ) {
 				
-				$output .= '<div id="cyboslider-wrapper">';
+				$output .= '<div id="cyboslider-wrapper" style="width: ' . CYBOSLIDER_WIDTH . 'px; height: ' . CYBOSLIDER_HEIGHT . 'px;">';
 				
-				$output .= '<div id="cyboslider-screen">';
+				$output .= '<div id="cyboslider-screen" style="width: ' . CYBOSLIDER_IMAGE_WIDTH . 'px; height: ' . CYBOSLIDER_IMAGE_HEIGHT . 'px;">';
 				
-				$output .= '<ul id="cyboslider-images-list">';
+				$output .= '<ul id="cyboslider-images-list" style="height: ' . CYBOSLIDER_IMAGE_HEIGHT . 'px;">';
 				// the loop - add the images
 				while ( $query->have_posts() ) {
 					$query->the_post();
@@ -55,14 +55,22 @@ if ( ! class_exists( 'Cyboslider_Frontend' ) ) {
 					
 					$slide = get_post_meta( $post_id );
 					
-					$image    = $this->get_the_image( $post_id );
-					$title    = get_the_title();
-					$link     = empty( $slide[ $prefix . 'link' ][0] ) ? '' : $slide[ $prefix . 'link' ][0];
-					$target   = $this->is_link_external( $link ) ? ' target="_blank"' : '';
+					$image           = $this->get_the_image( $post_id );
+					$title           = get_the_title();
+					$link            = empty( $slide[ $prefix . 'link' ][0] ) ? '' : $slide[ $prefix . 'link' ][0];
+					$target          = $this->is_link_external( $link ) ? ' target="_blank"' : '';
+					$title           = get_the_title();
+					$subtitle        = empty( $slide[ $prefix . 'subtitle' ][0] ) ? __( '(No subtitle)', 'cyboslider' ) : $slide[ $prefix . 'subtitle' ][0];
+					$mobile_caption  = '<div class="cyboslider-mobile-caption" style="height: ' . CYBOSLIDER_CAPTIONS_HEIGHT . 'px;">'.
+					                       '<span class="cyboslider-caption-title">' . $title . '</span>'.
+					                       '<span class="cyboslider-caption-subtitle">' . $subtitle . '</span>'.
+					                   '</div>';
 					
-					$output .= '<li id="cyboslider-image-' . $post_id . '" class="cyboslider-image cyboslider-image-' . $x . '">'.
+					
+					$output .= '<li id="cyboslider-image-' . $post_id . '" class="cyboslider-image cyboslider-image-' . $x . '" style="height: ' . CYBOSLIDER_IMAGE_HEIGHT . 'px;">'.
 					               '<a href="' . $link .'" title="' . $title . '">'.
 					                   $image.
+					                   $mobile_caption.
 					               '</a>'.
 					           '</li>';
 					
@@ -75,7 +83,7 @@ if ( ! class_exists( 'Cyboslider_Frontend' ) ) {
 				rewind_posts();
 				$x = 0;
 				
-				$output .= '<ul id="cyboslider-captions-list">';
+				$output .= '<ul id="cyboslider-captions-list" style="height: ' . CYBOSLIDER_IMAGE_HEIGHT . 'px; width: ' . CYBOSLIDER_CAPTIONS_WIDTH . 'px;">';
 				// the loop - add the captions
 				while ( $query->have_posts() ) {
 					$query->the_post();
@@ -89,7 +97,7 @@ if ( ! class_exists( 'Cyboslider_Frontend' ) ) {
 					$link     = empty( $slide[ $prefix . 'link' ][0] ) ? '' : $slide[ $prefix . 'link' ][0];
 					$target   = $this->is_link_external( $link ) ? ' target="_blank"' : '';
 					
-					$output .= '<li id="cyboslider-caption-' . $post_id . '" class="cyboslider-caption cyboslider-caption-' . $x . '" data-cyboslider-item="' .$x . '">'.
+					$output .= '<li id="cyboslider-caption-' . $post_id . '" class="cyboslider-caption cyboslider-caption-' . $x . '" data-cyboslider-item="' .$x . '" style="height: ' . CYBOSLIDER_CAPTIONS_HEIGHT . 'px;">'.
 					               '<a href="' . $link .'" title="' . $title . '">'.
 					                   '<span class="cyboslider-caption-title">' . $title . '</span>'.
 					                   '<span class="cyboslider-caption-subtitle">' . $subtitle . '</span>'.
@@ -99,6 +107,25 @@ if ( ! class_exists( 'Cyboslider_Frontend' ) ) {
 					$x++;
 				}
 				$output .= '</ul>'; // #cyboslider-captions-list
+				
+				rewind_posts();
+				$x = 0;
+				
+				$output .= '<ul id="cyboslider-mobile-buttons-list">';
+				// the loop - add the captions
+				while ( $query->have_posts() ) {
+					$query->the_post();
+					
+					$output .= '<li class="cyboslider-mobile-button cyboslider-mobile-button-' . $x . '" data-cyboslider-item="' . $x . '" style="height: ' . CYBOSLIDER_CAPTIONS_HEIGHT . 'px;">'.
+					               '<span>' . $x . '</span>'.
+					           '</li>';
+					
+					$x++;
+				}
+				$output .= '<li class="cyboslider-mobile-button-dummy" style="height: ' . CYBOSLIDER_CAPTIONS_HEIGHT . 'px;"></li>';
+				$output .= '</ul>'; // #cyboslider-mobile-buttons-list
+				
+				
 				
 				$output .= '</div>'; // #cyboslider-wrapper
 				
