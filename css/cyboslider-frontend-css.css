@@ -57,9 +57,12 @@ div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption span,
 div#cyboslider-wrapper ul#cyboslider-images-list li.cyboslider-image div.cyboslider-mobile-caption span
 	{ display: block; font-size: 15px; }
 
+div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption span.cyboslider-caption-title
+	{ width: 350px; }
+
 div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption span.cyboslider-caption-title,
 div#cyboslider-wrapper ul#cyboslider-images-list li.cyboslider-image div.cyboslider-mobile-caption span.cyboslider-caption-title
-	{ font-weight: bold; }
+	{ font-weight: bold; display: block; overflow: hidden; white-space: nowrap; }
 
 div#cyboslider-wrapper ul#cyboslider-mobile-buttons-list
 	{ display: none; padding: 0; list-style-type: none; float: left; }
