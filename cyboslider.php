@@ -495,6 +495,13 @@ if ( ! class_exists( 'Cyboslider_Main' ) ) {
 					'force_activation'   => true,
 					'force_deactivation' => false,
 				),
+				array(
+					'name'               => 'Meta Box Text Limiter',
+					'slug'               => 'meta-box-text-limiter',
+					'required'           => true,
+					'force_activation'   => true,
+					'force_deactivation' => false,
+				),
 			);
 			
 			/**
