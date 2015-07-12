@@ -62,8 +62,10 @@ if ( ! class_exists( 'Cyboslider_Frontend' ) ) {
 					$title           = get_the_title();
 					$subtitle        = empty( $slide[ $prefix . 'subtitle' ][0] ) ? __( '(No subtitle)', 'cyboslider' ) : $slide[ $prefix . 'subtitle' ][0];
 					$mobile_caption  = '<div class="cyboslider-mobile-caption" style="height: ' . CYBOSLIDER_CAPTIONS_HEIGHT . 'px;">'.
-					                       '<span class="cyboslider-caption-title">' . $title . '</span>'.
-					                       '<span class="cyboslider-caption-subtitle">' . $subtitle . '</span>'.
+					                       '<div class="cyboslider-mobile-caption-wrapper">'.
+					                           '<span class="cyboslider-caption-title">' . $title . '</span>'.
+					                           '<span class="cyboslider-caption-subtitle">' . $subtitle . '</span>'.
+					                       '</div>'.
 					                   '</div>';
 					
 					

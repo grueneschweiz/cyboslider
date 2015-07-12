@@ -91,6 +91,7 @@ if ( ! class_exists( 'Cyboslider_Post_Type' ) ) {
 						'type' => 'text',
 						'std'  => __( '(No subtitle)', 'cyboslider' ),
 						'size' => 60,
+						'limit'=> 80,
 					),
 					array(
 						'name' => __( 'Link','cyboslider' ),
