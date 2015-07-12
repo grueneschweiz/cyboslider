@@ -69,7 +69,7 @@ if ( ! class_exists( 'Cyboslider_Frontend' ) ) {
 					                   '</div>';
 					
 					
-					$output .= '<li id="cyboslider-image-' . $post_id . '" class="cyboslider-image cyboslider-image-' . $x . '" style="height: ' . CYBOSLIDER_IMAGE_HEIGHT . 'px;">'.
+					$output .= '<li id="cyboslider-image-' . $post_id . '" class="cyboslider-image cyboslider-image-' . $x . '" data-cyboslider-item="' . $x . '" style="height: ' . CYBOSLIDER_IMAGE_HEIGHT . 'px;">'.
 					               '<a href="' . $link .'" title="' . $title . '">'.
 					                   $image.
 					                   $mobile_caption.
@@ -99,7 +99,7 @@ if ( ! class_exists( 'Cyboslider_Frontend' ) ) {
 					$link     = empty( $slide[ $prefix . 'link' ][0] ) ? '' : $slide[ $prefix . 'link' ][0];
 					$target   = $this->is_link_external( $link ) ? ' target="_blank"' : '';
 					
-					$output .= '<li id="cyboslider-caption-' . $post_id . '" class="cyboslider-caption cyboslider-caption-' . $x . '" data-cyboslider-item="' .$x . '" style="height: ' . CYBOSLIDER_CAPTIONS_HEIGHT . 'px;">'.
+					$output .= '<li id="cyboslider-caption-' . $post_id . '" class="cyboslider-caption cyboslider-caption-' . $x . '" data-cyboslider-item="' . $x . '" style="height: ' . CYBOSLIDER_CAPTIONS_HEIGHT . 'px;">'.
 					               '<a href="' . $link .'" title="' . $title . '">'.
 					                   '<span class="cyboslider-caption-title">' . $title . '</span>'.
 					                   '<span class="cyboslider-caption-subtitle">' . $subtitle . '</span>'.

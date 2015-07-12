@@ -24,7 +24,7 @@
 			$( '.cyboslider-caption-0, .cyboslider-mobile-button-0' ).addClass( 'active' );
 			
 			// initiate hover event
-			$( '.cyboslider-caption, .cyboslider-mobile-button' ).hover( 
+			$( '.cyboslider-caption, .cyboslider-mobile-button, .cyboslider-image' ).hover( 
 				function() { self.hoverStart( this ); }, 
 				function() { self.hoverStop( this ); }
 			);
