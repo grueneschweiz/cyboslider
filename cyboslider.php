@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Cyboslider
  * Plugin URI: https://github.com/cyrillbolliger/cyboslider
- * Version: 1.1.0
+ * Version: 1.1.1
  * Description: Slider with captions and links, responsive.
  * Author: Cyrill Bolliger
  * Text Domain: cyboslider
@@ -43,7 +43,7 @@ define( 'CYBOSLIDER_PLUGIN_PATH', dirname( __FILE__ ) );
 /**
  * version number (dont forget to change it also in the header)
  */
-define( 'CYBOSLIDER_VERSION', '1.1.0' );
+define( 'CYBOSLIDER_VERSION', '1.1.1' );
 
 /**
  * plugin prefix
