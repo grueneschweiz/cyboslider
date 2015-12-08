@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Cyboslider
  * Plugin URI: https://github.com/cyrillbolliger/cyboslider
- * Version: 1.1.3
+ * Version: 1.1.4
  * Description: Slider with captions and links, responsive.
  * Author: Cyrill Bolliger
  * Text Domain: cyboslider
@@ -43,7 +43,7 @@ define( 'CYBOSLIDER_PLUGIN_PATH', dirname( __FILE__ ) );
 /**
  * version number (dont forget to change it also in the header)
  */
-define( 'CYBOSLIDER_VERSION', '1.1.3' );
+define( 'CYBOSLIDER_VERSION', '1.1.4' );
 
 /**
  * plugin prefix
@@ -588,7 +588,9 @@ if ( ! class_exists( 'Cyboslider_Main' ) ) {
            * @since 1.1.4
            */
           public function remove_quickedit_link( $action ) {
-               unset( $action['inline hide-if-no-js'] );
+               if ( 'cyboslider' == get_post_type() ) {
+                    unset( $action['inline hide-if-no-js'] );
+               }
                return $action;
           }
           
@@ -601,7 +603,7 @@ if ( ! class_exists( 'Cyboslider_Main' ) ) {
            * @since 1.1.4
            */
           public function tweak_post_update_messages_links( $messages ) {
-               if ( cyboslider == get_post_type() ) {
+               if ( 'cyboslider' == get_post_type() ) {
                     $messages['post'][1] = sprintf( 
                          __( 'Post updated. <a href="%s">View post</a>' ), 
                          esc_url( get_home_url() ) 
@@ -610,8 +612,8 @@ if ( ! class_exists( 'Cyboslider_Main' ) ) {
                          __( 'Post published. <a href="%s">View post</a>' ),
                          esc_url( get_home_url() )
                     );
-                    $messages['post'][8] = __( 'Post submitted.', 'collectme' );
-                    $messages['post'][10] = __( 'Post draft updated.', 'collectme' );
+                    $messages['post'][8] = __( 'Post submitted.', 'cyboslider' );
+                    $messages['post'][10] = __( 'Post draft updated.', 'cyboslider' );
                }
                return $messages;
           }
