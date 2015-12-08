@@ -90,6 +90,8 @@ if ( ! class_exists( 'Cyboslider_Main' ) ) {
 			add_action( 'admin_enqueue_scripts', array( &$this, 'load_resources' ) );
 			add_action( 'tgmpa_register', array( &$this, 'register_required_plugins' ) );
 			add_action( 'after_setup_theme', array( &$this, 'register_image_size' ) );
+               add_filter( 'post_row_actions', array( &$this, 'remove_quickedit_link' ) );
+               add_filter( 'post_updated_messages', array( &$this, 'tweak_post_update_messages_links' ) );
 		}
 		
 		/**
@@ -579,6 +581,40 @@ if ( ! class_exists( 'Cyboslider_Main' ) ) {
 			
 			add_image_size( 'cyboslider_image', $image_size['width'], $image_size['height'], array( 'center', 'center' ) );
 		}
+          
+          /**
+           * Remove the quick edit link in the posts table
+           * 
+           * @since 1.1.4
+           */
+          public function remove_quickedit_link( $action ) {
+               unset( $action['inline hide-if-no-js'] );
+               return $action;
+          }
+          
+          /**
+           * Tweaks the links in the post update messages for cyboslider
+           * 
+           * The 'View post' link goes to the home url,
+           * the 'Post preview' link is removed.
+           * 
+           * @since 1.1.4
+           */
+          public function tweak_post_update_messages_links( $messages ) {
+               if ( cyboslider == get_post_type() ) {
+                    $messages['post'][1] = sprintf( 
+                         __( 'Post updated. <a href="%s">View post</a>' ), 
+                         esc_url( get_home_url() ) 
+                    );
+                    $messages['post'][6] = sprintf(
+                         __( 'Post published. <a href="%s">View post</a>' ),
+                         esc_url( get_home_url() )
+                    );
+                    $messages['post'][8] = __( 'Post submitted.', 'collectme' );
+                    $messages['post'][10] = __( 'Post draft updated.', 'collectme' );
+               }
+               return $messages;
+          }
 		
 	} // END class Cyboslider_Main
 } // END if ( ! class_exists( 'Cyboslider_Main' ) )
