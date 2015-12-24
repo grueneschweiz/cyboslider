@@ -119,7 +119,7 @@ if ( ! class_exists( 'Cyboslider_Frontend' ) ) {
 					$query->the_post();
 					
 					$output .= '<li class="cyboslider-mobile-button cyboslider-mobile-button-' . $x . '" data-cyboslider-item="' . $x . '" style="height: ' . CYBOSLIDER_CAPTIONS_HEIGHT . 'px;">'.
-					               '<span>' . $x . '</span>'.
+					               '<span>' . ( $x + 1 ) . '</span>'.
 					           '</li>';
 					
 					$x++;
