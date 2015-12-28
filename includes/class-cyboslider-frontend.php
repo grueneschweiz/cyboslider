@@ -59,7 +59,6 @@ if ( ! class_exists( 'Cyboslider_Frontend' ) ) {
 					$title           = get_the_title();
 					$link            = empty( $slide[ $prefix . 'link' ][0] ) ? '' : $slide[ $prefix . 'link' ][0];
 					$target          = $this->is_link_external( $link ) ? ' target="_blank"' : '';
-					$title           = get_the_title();
 					$subtitle        = empty( $slide[ $prefix . 'subtitle' ][0] ) ? __( '(No subtitle)', 'cyboslider' ) : $slide[ $prefix . 'subtitle' ][0];
 					$mobile_caption  = '<div class="cyboslider-mobile-caption" style="height: ' . CYBOSLIDER_CAPTIONS_HEIGHT . 'px;">'.
 					                       '<div class="cyboslider-mobile-caption-wrapper">'.
@@ -165,13 +164,11 @@ if ( ! class_exists( 'Cyboslider_Frontend' ) ) {
 			} else {
 				// if no image was defined
 				// return a default image
+                    global $_wp_additional_image_sizes;
 				
-				$image_size = apply_filters( 
-					'cyboslider_image_size', 
-					array( 
-						'width'  => 570, // also defined in cyboslider.php -> register_image_size()
-						'height' => 319  // also defined in cyboslider.php -> register_image_size()
-					)
+				$image_size = array( 
+					'width'  => $_wp_additional_image_sizes['cyboslider_image']['width'],
+					'height' => $_wp_additional_image_sizes['cyboslider_image']['height'],
 				);
 				$image_url = plugin_dir_url( CYBOSLIDER_PLUGIN_PATH . '/cyboslider.php' ) . 'img/default.jpg';
 				return '<img class="attachment-post-thumbnail cyboslider-default-image wp-post-image" width="'.$image_size['width'].'" height="'.$image_size['height'].'" alt="'.__( 'No image found', 'cyboslider' ).'" src="'.$image_url.'">';
