@@ -107,6 +107,9 @@ if ( ! class_exists( 'Cyboslider_Frontend' ) ) {
 					
 					$x++;
 				}
+                    for ( $x = $x; 3 >= $x; $x++ ) {
+                         $output .= '<li class="cyboslider-caption-dummy" style="height: ' . CYBOSLIDER_CAPTIONS_HEIGHT . 'px;"></li>';
+                    }
 				$output .= '</ul>'; // #cyboslider-captions-list
 				
 				rewind_posts();
@@ -123,7 +126,9 @@ if ( ! class_exists( 'Cyboslider_Frontend' ) ) {
 					
 					$x++;
 				}
-				$output .= '<li class="cyboslider-mobile-button-dummy" style="height: ' . CYBOSLIDER_CAPTIONS_HEIGHT . 'px;"></li>';
+                    for ( $x = $x; 4 >= $x; $x++ ) {
+                         $output .= '<li class="cyboslider-mobile-button-dummy" style="height: ' . CYBOSLIDER_CAPTIONS_HEIGHT . 'px;"></li>';
+                    }
 				$output .= '</ul>'; // #cyboslider-mobile-buttons-list
 				
 				
