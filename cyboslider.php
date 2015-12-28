@@ -574,8 +574,8 @@ if ( ! class_exists( 'Cyboslider_Main' ) ) {
 			$image_size = apply_filters( 
 				'cyboslider_image_size', 
 				array( 
-					'width'  => 570, // also defined in includes/class-cyboslider-frontend.php -> register_image_size()
-					'height' => 319  // also defined in includes/class-cyboslider-frontend.php -> register_image_size()
+					'width'  => 570,
+					'height' => 319,
 				)
 			);
 			
