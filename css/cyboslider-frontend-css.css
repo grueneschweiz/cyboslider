@@ -13,7 +13,8 @@ div#cyboslider-wrapper ul#cyboslider-images-list li.cyboslider-image
 div#cyboslider-wrapper ul#cyboslider-captions-list
 	{ padding: 0; list-style-type: none; float: left; }
 
-div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption
+div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption,
+div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption-dummy
 	{ display: table; width: 100%; }
 
 div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption.active::before,
@@ -22,11 +23,13 @@ div#cyboslider-wrapper ul#cyboslider-mobile-buttons-list li.cyboslider-mobile-bu
 	  display: block; height: 0; left: -7px; position: absolute; top: 34px; width: 0; }
 
 div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption,
+div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption-dummy,
 div#cyboslider-wrapper ul#cyboslider-mobile-buttons-list li.cyboslider-mobile-button,
 div#cyboslider-wrapper ul#cyboslider-mobile-buttons-list li.cyboslider-mobile-button-dummy
 	{ background-color: #f3f3f3; position: relative; }
 
 div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption:not(:first-of-type),
+div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption-dummy,
 div#cyboslider-wrapper ul#cyboslider-mobile-buttons-list li.cyboslider-mobile-button:not(:first-of-type),
 div#cyboslider-wrapper ul#cyboslider-mobile-buttons-list li.cyboslider-mobile-button-dummy
 	{ margin-top: 1px; }
