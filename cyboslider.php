@@ -463,7 +463,7 @@ if ( ! class_exists( 'Cyboslider_Main' ) ) {
 		 * 
 		 * @todo       update the TGM Plugin and remove the 'if not is_multisite()' condition as soon as the TGM Plugin supports MU.
 		 */
-		private function register_required_plugins() {
+		public function register_required_plugins() {
 			/**
 			 * exit if multisite. The TGM Plugin doesent support MU blogs yet.
 			 * 
@@ -519,7 +519,7 @@ if ( ! class_exists( 'Cyboslider_Main' ) ) {
 				'has_notices'  => true,                    // Show admin notices or not.
 				'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
 				'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
-				'is_automatic' => true,                   // Automatically activate plugins after installation or not.
+				'is_automatic' => true,                    // Automatically activate plugins after installation or not.
 				'message'      => '',                      // Message to output right before the plugins table.
 				'strings'      => array(
 					'page_title'                      => __( 'Install Required Plugins', 'cyboslider' ),
