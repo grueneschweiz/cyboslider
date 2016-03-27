@@ -58,7 +58,7 @@ div#cyboslider-wrapper ul#cyboslider-mobile-buttons-list li.cyboslider-mobile-bu
 	
 div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption span,
 div#cyboslider-wrapper ul#cyboslider-images-list li.cyboslider-image div.cyboslider-mobile-caption span
-	{ display: block; font-size: 15px; }
+	{ display: block; font-size: 14px; font-size: 0.875rem; }
 
 div#cyboslider-wrapper ul#cyboslider-captions-list li.cyboslider-caption span.cyboslider-caption-title
 	{ width: 350px; }
