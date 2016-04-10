@@ -60,6 +60,7 @@ define( 'CYBOSLIDER_IMAGE_HEIGHT', 319 );
 define( 'CYBOSLIDER_CAPTIONS_WIDTH', 380 );
 define( 'CYBOSLIDER_CAPTIONS_HEIGHT', 79 );
 define( 'CYBOSLIDER_INTERMEDIATE_WIDTH', 669 );
+define( 'CYBOSLIDER_FULLSIZE_HMARGIN', 15 );
  
 /**
  * load settings class
@@ -384,6 +385,7 @@ if ( ! class_exists( 'Cyboslider_Main' ) ) {
 				'captionsWidth'    => CYBOSLIDER_CAPTIONS_WIDTH,
 				'captionsHeight'   => CYBOSLIDER_CAPTIONS_HEIGHT,
 				'intermediateWidth'=> CYBOSLIDER_INTERMEDIATE_WIDTH,
+                    'fullsizeMargin'    => CYBOSLIDER_FULLSIZE_HMARGIN,
 			);
 			wp_localize_script( 'cyboslider-frontend-js', 'cybosliderConst', $constants );
 		}

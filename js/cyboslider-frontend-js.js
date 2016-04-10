@@ -132,7 +132,7 @@
 			
 			switch ( true ) {
 				// desktop
-				case ( windowWidth >= c.width ) :
+				case ( windowWidth >= c.width + c.fullsizeMargin ) :
 					$wrapper.width( parseInt( c.width ) - wrapperPaddingH )
 					        .height( c.height - wrapperPaddingV );
 					$screen.width( c.imageWidth )
@@ -142,7 +142,7 @@
 					break;
 				
 				// intermediate (smaller size but with whitespace on the side)
-				case ( windowWidth < c.width && windowWidth >= c.intermediateWidth ) :
+				case ( windowWidth < c.width + c.fullsizeMargin && windowWidth >= c.intermediateWidth ) :
 					$wrapper.width( c.intermediateWidth - wrapperPaddingH )
 					        .height( c.height + c.captionsHeight - wrapperPaddingV );
 					$screen.width( c.imageWidth )
