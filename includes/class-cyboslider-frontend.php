@@ -62,16 +62,16 @@ if ( ! class_exists( 'Cyboslider_Frontend' ) ) {
 					$subtitle        = empty( $slide[ $prefix . 'subtitle' ][0] ) ? __( '(No subtitle)', 'cyboslider' ) : $slide[ $prefix . 'subtitle' ][0];
 					$mobile_caption  = '<div class="cyboslider-mobile-caption" style="height: ' . CYBOSLIDER_CAPTIONS_HEIGHT . 'px;">'.
 					                       '<div class="cyboslider-mobile-caption-wrapper">'.
-					                           '<span class="cyboslider-caption-title">' . $title . '</span>'.
-					                           '<span class="cyboslider-caption-subtitle">' . $subtitle . '</span>'.
+					                           '<span class="cyboslider-caption-title">' . esc_html( $title ) . '</span>'.
+					                           '<span class="cyboslider-caption-subtitle">' . esc_html( $subtitle ) . '</span>'.
 					                       '</div>'.
 					                   '</div>';
 					
 					
-					$output .= '<li id="cyboslider-image-' . $post_id . '" class="cyboslider-image cyboslider-image-' . $x . '" data-cyboslider-item="' . $x . '" style="height: ' . CYBOSLIDER_IMAGE_HEIGHT . 'px;">'.
-					               '<a href="' . $link .'" title="' . $title . '"' . $target . '>'.
+					$output .= '<li id="cyboslider-image-' . esc_attr( $post_id ) . '" class="cyboslider-image cyboslider-image-' . $x . '" data-cyboslider-item="' . $x . '" style="height: ' . CYBOSLIDER_IMAGE_HEIGHT . 'px;">'.
+					               '<a href="' . esc_url( $link ) .'" title="' . esc_attr( $title ) . '"' . esc_attr( $target ) . '>'.
 					                   $image.
-					                   $mobile_caption.
+					                   $mobile_caption .
 					               '</a>'.
 					           '</li>';
 					
@@ -98,10 +98,10 @@ if ( ! class_exists( 'Cyboslider_Frontend' ) ) {
 					$link     = empty( $slide[ $prefix . 'link' ][0] ) ? '' : $slide[ $prefix . 'link' ][0];
 					$target   = $this->is_link_external( $link ) ? ' target="_blank"' : '';
 					
-					$output .= '<li id="cyboslider-caption-' . $post_id . '" class="cyboslider-caption cyboslider-caption-' . $x . '" data-cyboslider-item="' . $x . '" style="height: ' . CYBOSLIDER_CAPTIONS_HEIGHT . 'px;">'.
-					               '<a href="' . $link .'" title="' . $title . '"' . $target . '>'.
-					                   '<span class="cyboslider-caption-title">' . $title . '</span>'.
-					                   '<span class="cyboslider-caption-subtitle">' . $subtitle . '</span>'.
+					$output .= '<li id="cyboslider-caption-' . esc_attr( $post_id ) . '" class="cyboslider-caption cyboslider-caption-' . $x . '" data-cyboslider-item="' . $x . '" style="height: ' . CYBOSLIDER_CAPTIONS_HEIGHT . 'px;">'.
+					               '<a href="' . esc_url( $link ) .'" title="' . esc_attr( $title ) . '"' . esc_attr( $target ) . '>'.
+					                   '<span class="cyboslider-caption-title">' . esc_html( $title ) . '</span>'.
+					                   '<span class="cyboslider-caption-subtitle">' . esc_html( $subtitle ) . '</span>'.
 					               '</a>'.
 					           '</li>';
 					
