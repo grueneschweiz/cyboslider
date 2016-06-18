@@ -102,7 +102,13 @@ if ( ! class_exists( 'Cyboslider_Post_Type' ) ) {
 					),
 					array(
 						'name' => __('Slide','cyboslider' ),
-						'desc' => __('Please upload slide. Minimal size: 570px * 319px, preferred size: 1140px * 638px. Larger is always ok :)','politch' ),
+						'desc' => sprintf( 
+                                      _x('Please upload slide. Minimal size: %s * %s, preferred size: %s * %s. Larger is always ok :)', 'Pixel sizes with unit', 'politch' ),
+                                      CYBOSLIDER_IMAGE_WIDTH . 'px',
+                                      CYBOSLIDER_IMAGE_HEIGHT . 'px',
+                                      CYBOSLIDER_IMAGE_WIDTH*2 . 'px',
+                                      CYBOSLIDER_IMAGE_HEIGHT*2 . 'px'
+                                      ),
 						'id'   => $prefix . 'slide',
 						'type' => 'image_advanced',
 						'std'  => ''
