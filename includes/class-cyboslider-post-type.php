@@ -103,7 +103,7 @@ if ( ! class_exists( 'Cyboslider_Post_Type' ) ) {
 					array(
 						'name' => __('Slide','cyboslider' ),
 						'desc' => sprintf( 
-                                      _x('Please upload slide. Minimal size: %s * %s, preferred size: %s * %s. Larger is always ok :)', 'Pixel sizes with unit', 'politch' ),
+                                      _x('Please upload slide. Minimal size: %s * %s, preferred size: %s * %s. Larger is always ok :)', 'Pixel sizes with unit', 'cyboslider' ),
                                       CYBOSLIDER_IMAGE_WIDTH . 'px',
                                       CYBOSLIDER_IMAGE_HEIGHT . 'px',
                                       CYBOSLIDER_IMAGE_WIDTH*2 . 'px',
