@@ -102,7 +102,7 @@ if ( ! class_exists( 'Cyboslider_Post_Type' ) ) {
 					),
 					array(
 						'name' => __('Slide','cyboslider' ),
-						'desc' => __('Please upload slide','politch' ),
+						'desc' => __('Please upload slide. Minimal size: 570px * 319px, preferred size: 1140px * 638px. Larger is always ok :)','politch' ),
 						'id'   => $prefix . 'slide',
 						'type' => 'image_advanced',
 						'std'  => ''
