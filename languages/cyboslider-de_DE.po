@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Cyboslider\n"
-"POT-Creation-Date: 2015-09-25 12:12+0100\n"
-"PO-Revision-Date: 2015-09-25 12:12+0100\n"
+"POT-Creation-Date: 2016-06-18 23:16+0100\n"
+"PO-Revision-Date: 2016-06-18 23:19+0100\n"
 "Last-Translator: Cyrill Bolliger <bolliger@gmx.ch>\n"
 "Language-Team: Cyrill Bolliger <bolliger@gmx.ch>\n"
 "Language: DE\n"
@@ -18,42 +18,42 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../cyboslider.php:155
+#: ../cyboslider.php:158
 msgid "You do not have sufficient permissions to access this page."
 msgstr "Sie haben nicht ausreichende Rechte um diese Seite anzuzeigen."
 
-#: ../cyboslider.php:523 ../vendor/class-tgm-plugin-activation.php:333
+#: ../cyboslider.php:527 ../vendor/class-tgm-plugin-activation.php:333
 msgid "Install Required Plugins"
 msgstr "Benötigte Plugins installieren"
 
-#: ../cyboslider.php:524 ../vendor/class-tgm-plugin-activation.php:334
+#: ../cyboslider.php:528 ../vendor/class-tgm-plugin-activation.php:334
 msgid "Install Plugins"
 msgstr "Plugins installieren"
 
-#: ../cyboslider.php:525 ../vendor/class-tgm-plugin-activation.php:335
+#: ../cyboslider.php:529 ../vendor/class-tgm-plugin-activation.php:335
 #, php-format
 msgid "Installing Plugin: %s"
 msgstr "Folgendes Plugin wird installiert: %s"
 
-#: ../cyboslider.php:526 ../vendor/class-tgm-plugin-activation.php:336
+#: ../cyboslider.php:530 ../vendor/class-tgm-plugin-activation.php:336
 msgid "Something went wrong with the plugin API."
 msgstr "Leider gab es einen Fehler mit der plugin API."
 
-#: ../cyboslider.php:527 ../vendor/class-tgm-plugin-activation.php:338
+#: ../cyboslider.php:531 ../vendor/class-tgm-plugin-activation.php:338
 #, php-format
 msgid "This theme requires the following plugin: %1$s."
 msgid_plural "This theme requires the following plugins: %1$s."
 msgstr[0] "Dieses Theme benötigt das folgende Plugin: %1$s."
 msgstr[1] "Dieses Theme benötigt die folgenden Plugins: %1$s."
 
-#: ../cyboslider.php:528 ../vendor/class-tgm-plugin-activation.php:343
+#: ../cyboslider.php:532 ../vendor/class-tgm-plugin-activation.php:343
 #, php-format
 msgid "This theme recommends the following plugin: %1$s."
 msgid_plural "This theme recommends the following plugins: %1$s."
 msgstr[0] "Dieses Theme empfiehlt das folgende Plugin: %1$s."
 msgstr[1] "Dieses Theme empfiehlt die folgenden Plugins: %1$s."
 
-#: ../cyboslider.php:529
+#: ../cyboslider.php:533
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to install the %s plugin. "
@@ -72,7 +72,7 @@ msgstr[1] ""
 "installieren. Für weitere Infos kontaktieren Sie bitte den Administrator "
 "dieser Seite."
 
-#: ../cyboslider.php:530 ../vendor/class-tgm-plugin-activation.php:368
+#: ../cyboslider.php:534 ../vendor/class-tgm-plugin-activation.php:368
 #, php-format
 msgid "The following required plugin is currently inactive: %1$s."
 msgid_plural "The following required plugins are currently inactive: %1$s."
@@ -81,14 +81,14 @@ msgstr[0] ""
 msgstr[1] ""
 "Die folgenden zwingend benötigten Plugins sind momentan deaktiviert: %1s."
 
-#: ../cyboslider.php:531 ../vendor/class-tgm-plugin-activation.php:373
+#: ../cyboslider.php:535 ../vendor/class-tgm-plugin-activation.php:373
 #, php-format
 msgid "The following recommended plugin is currently inactive: %1$s."
 msgid_plural "The following recommended plugins are currently inactive: %1$s."
 msgstr[0] "Das folgende empfohlene Plugin ist momentan deaktiviert: %1s."
 msgstr[1] "Die folgenden empfohlenen Plugins sind momentan deaktiviert: %1s."
 
-#: ../cyboslider.php:532
+#: ../cyboslider.php:536
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to activate the %s "
@@ -105,7 +105,7 @@ msgstr[1] ""
 "Leider haben Sie keine ausreichenden Rechte um die Plugins %s zu aktivieren. "
 "Für weitere Infos kontaktieren Sie bitte den Administrator dieser Seite."
 
-#: ../cyboslider.php:533 ../vendor/class-tgm-plugin-activation.php:353
+#: ../cyboslider.php:537 ../vendor/class-tgm-plugin-activation.php:353
 #, php-format
 msgid ""
 "The following plugin needs to be updated to its latest version to ensure "
@@ -120,7 +120,7 @@ msgstr[1] ""
 "Die folgenden Plugins müssen upgedated werden damit die maximale "
 "Kompatibilität gewährleistet ist: %1$s."
 
-#: ../cyboslider.php:534
+#: ../cyboslider.php:538
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to update the %s plugin. "
@@ -137,43 +137,61 @@ msgstr[1] ""
 "Leider haben Sie keine ausreichenden Rechte um die Plugins %s zu updaten. "
 "Für weitere Infos kontaktieren Sie bitte den Administrator dieser Seite."
 
-#: ../cyboslider.php:535 ../vendor/class-tgm-plugin-activation.php:383
+#: ../cyboslider.php:539 ../vendor/class-tgm-plugin-activation.php:383
 msgid "Begin installing plugin"
 msgid_plural "Begin installing plugins"
 msgstr[0] "Beginn der Plugin Installation"
 msgstr[1] "Beginn der Plugin Installation"
 
-#: ../cyboslider.php:536 ../vendor/class-tgm-plugin-activation.php:393
+#: ../cyboslider.php:540 ../vendor/class-tgm-plugin-activation.php:393
 msgid "Begin activating plugin"
 msgid_plural "Begin activating plugins"
 msgstr[0] "Beginn der Plugin Aktivierung"
 msgstr[1] "Beginn der Plugin Aktivierung"
 
-#: ../cyboslider.php:537 ../vendor/class-tgm-plugin-activation.php:397
+#: ../cyboslider.php:541 ../vendor/class-tgm-plugin-activation.php:397
 msgid "Return to Required Plugins Installer"
 msgstr "Zurück zum Plugin-Installer für zwingend benötigte Plugins"
 
-#: ../cyboslider.php:538 ../vendor/class-tgm-plugin-activation.php:399
+#: ../cyboslider.php:542 ../vendor/class-tgm-plugin-activation.php:399
 #: ../vendor/class-tgm-plugin-activation.php:3029
 msgid "Plugin activated successfully."
 msgstr "Plugin erfolgreich aktiviert."
 
-#: ../cyboslider.php:539
+#: ../cyboslider.php:543
 #, php-format
 msgid "All plugins installed and activated successfully. %s"
 msgstr "Alle plugins wurden erfolgreich installiert und aktiviert. %s"
+
+#: ../cyboslider.php:610
+#, php-format
+msgid "Post updated. <a href=\"%s\">View post</a>"
+msgstr "Post aktualisiert. <a href=\"%s\">Post ansehen</a>"
+
+#: ../cyboslider.php:614
+#, php-format
+msgid "Post published. <a href=\"%s\">View post</a>"
+msgstr "Post publiziert. <a href=\"%s\">Post ansehen</a>"
+
+#: ../cyboslider.php:617
+msgid "Post submitted."
+msgstr "Post überwiesen."
+
+#: ../cyboslider.php:618
+msgid "Post draft updated."
+msgstr "Post Entwurf aktualisiert."
 
 #: ../includes/class-cyboslider-frontend.php:18
 msgid "Unknown shortcode or invalid arguments."
 msgstr "Unbekannter Shortcode oder fehlerhafte Argumente."
 
-#: ../includes/class-cyboslider-frontend.php:63
-#: ../includes/class-cyboslider-frontend.php:98
+#: ../includes/class-cyboslider-frontend.php:62
+#: ../includes/class-cyboslider-frontend.php:97
 #: ../includes/class-cyboslider-post-type.php:92
 msgid "(No subtitle)"
 msgstr "(Kein Untertitel)"
 
-#: ../includes/class-cyboslider-frontend.php:177
+#: ../includes/class-cyboslider-frontend.php:179
 msgid "No image found"
 msgstr "Kein Bild gefunden."
 
@@ -183,7 +201,7 @@ msgstr "Slides"
 
 #: ../includes/class-cyboslider-post-type.php:26
 #: ../includes/class-cyboslider-post-type.php:104
-#: ../includes/class-cyboslider-post-type.php:130
+#: ../includes/class-cyboslider-post-type.php:136
 msgid "Slide"
 msgstr "Slide"
 
@@ -248,11 +266,17 @@ msgstr "Link"
 msgid "Link to the corresponding article (internal or external)."
 msgstr "Link zum dazugehörigen Artikel (intern und extern möglich)."
 
-#: ../includes/class-cyboslider-post-type.php:105
-msgid "Please upload slide"
-msgstr "Bitte Bild hochladen."
+#: ../includes/class-cyboslider-post-type.php:106
+#, php-format
+msgctxt "Pixel sizes with unit"
+msgid ""
+"Please upload slide. Minimal size: %s * %s, preferred size: %s * %s. Larger "
+"is always ok :)"
+msgstr ""
+"Bitte Slide Bild hochladen. Minimale Grösse: %s * %s, bevorzugte Grösse: %s "
+"* %s. Grösser ist immer gut :)"
 
-#: ../includes/class-cyboslider-post-type.php:131
+#: ../includes/class-cyboslider-post-type.php:137
 msgid "ID"
 msgstr "ID"
 
@@ -650,6 +674,9 @@ msgstr "Alle Installationen wurden erfolgreich abgeschlossen."
 #, php-format
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr "Plugin %1$s (%2$d/%3$d) wird installiert"
+
+#~ msgid "Please upload slide"
+#~ msgstr "Bitte Bild hochladen."
 
 #~ msgid "Something went wrong."
 #~ msgstr "Uuups, etwas ist schief gelaufen."
